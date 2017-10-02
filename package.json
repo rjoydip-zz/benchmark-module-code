@@ -1,0 +1,38 @@
+{
+  "name": "simple-benchmark",
+  "version": "1.0.0",
+  "description": "Simple benchmark example",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
+    "precommit": "npm run lint",
+    "clean": "rm -rf node_modules && npm i"
+  },
+  "keywords": [
+    "simple-benchmark"
+  ],
+  "files": [
+    "benchmark.js",
+    "index.js"
+  ],
+  "repository": "rjoydip/simple-benchmark",
+  "author": {
+    "name": "Joydip Roy",
+    "email": "joydipand@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "husky": "^1.0.0-rc.10"
+  },
+  "readme": "readme.md",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}
