@@ -1,8 +1,24 @@
 'use strict'
 
-class SimpleClass {
+class One {
 	constructor() {}
+	test() {
+		return true
+	}
 }
 
+function Two() {}
 
-module.exports = Object.assign(new SimpleClass(), { SimpleClass })
+Two.prototype.test = function () {
+	return true
+}
+
+const Three = function () {
+	return {
+		test: function () {
+			return true
+		}
+	}
+}
+
+module.exports = Object.assign({}, { One, Two, Three })

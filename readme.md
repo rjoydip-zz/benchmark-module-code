@@ -1,16 +1,16 @@
-# simple-benchmark [![Build Status](https://travis-ci.org/rjoydip/simple-benchmark.svg?branch=master)](https://travis-ci.org/rjoydip/simple-benchmark)
+# module-structure-benchmark [![Build Status](https://travis-ci.org/rjoydip/module-structure-benchmark.svg?branch=master)](https://travis-ci.org/rjoydip/module-structure-benchmark)
 
-> Simple benchmark example
+> Module structure in node eco-system benchmark
 
 ## Install
 
 ```
-$ git clone https://github.com/rjoydip/simple-benchmark.git
-$ cd simple-benchmark
+$ git clone https://github.com/rjoydip/module-structure-benchmark.git
+$ cd module-structure-benchmark
 $ npm i
-$ npm run bench
+$ npm run benchmark
 ```
 
 ## License
 
-MIT © [Joydip Roy (rjoydip)](https://github.com/rjoydip/simple-benchmark/blob/master/license.md)
+MIT © [Joydip Roy (rjoydip)](https://github.com/rjoydip/module-structure-benchmark/blob/master/license.md)

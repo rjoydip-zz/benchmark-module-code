@@ -1,27 +1,29 @@
 {
-  "name": "simple-benchmark",
+  "name": "module-structure-benchmark",
   "version": "1.0.0",
-  "description": "Simple benchmark example",
+  "description": "Module structure in node eco-system benchmark",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
+    "benchmark": "node benchmark",
     "precommit": "npm run lint",
     "clean": "rm -rf node_modules && npm i"
   },
   "keywords": [
-    "simple-benchmark"
+    "module-structure-benchmark"
   ],
   "files": [
     "benchmark.js",
     "index.js"
   ],
-  "repository": "rjoydip/simple-benchmark",
+  "repository": "rjoydip/module-structure-benchmark",
   "author": {
     "name": "Joydip Roy",
     "email": "joydipand@gmail.com"
   },
   "license": "MIT",
   "dependencies": {
+    "benchmark": "^2.1.4",
     "chalk": "^2.4.1",
     "meow": "^5.0.0"
   },
