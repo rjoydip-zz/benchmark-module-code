@@ -7,7 +7,7 @@ node_js:
 before_install:
   - npm install --global npm@6.0.0
   - npm --version
-  
+
 script:
   - npm run clean
   - npm run lint
@@ -19,3 +19,8 @@ git:
 cache:
   directories:
     - node_modules
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
