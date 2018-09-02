@@ -1,22 +1,24 @@
 {
-  "name": "module-structure-benchmark",
+  "name": "modules-benchmark",
   "version": "1.0.0",
-  "description": "Module structure in node eco-system benchmark",
+  "description": "Node modules structure benchmark",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
     "benchmark": "node benchmark",
-    "precommit": "npm run lint",
-    "clean": "rm -rf node_modules && npm i"
+    "precommit": "npm run lint"
   },
   "keywords": [
-    "module-structure-benchmark"
+    "benchmark",
+    "modules",
+    "node",
+    "structure"
   ],
   "files": [
     "benchmark.js",
     "index.js"
   ],
-  "repository": "rjoydip/module-structure-benchmark",
+  "repository": "rjoydip/modules-benchmark",
   "author": {
     "name": "Joydip Roy",
     "email": "joydipand@gmail.com"

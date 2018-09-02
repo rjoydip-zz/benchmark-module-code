@@ -21,4 +21,12 @@ const Three = function () {
 	}
 }
 
-module.exports = Object.assign({}, { One, Two, Three })
+function Four () {
+	return {
+		test: function () {
+			return true
+		}
+	}
+}
+
+module.exports = Object.assign({}, { One, Two, Three, Four })

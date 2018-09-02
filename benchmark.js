@@ -1,7 +1,7 @@
 'use strict'
 const Benchmark = require('benchmark')
 
-const { One, Two, Three } = require('./index')
+const { One, Two, Three, Four } = require('./index')
 
 const suite = new Benchmark.Suite
 
@@ -28,6 +28,14 @@ suite
 		'fn': function (deferred) {
 			const _three = Three()
 			_three.test()
+			deferred.resolve()
+		}
+	})
+	.add('Four', {
+		'defer': true,
+		'fn': function (deferred) {
+			const _four = Four()
+			_four.test()
 			deferred.resolve()
 		}
 	})
